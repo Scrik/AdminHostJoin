@@ -1,0 +1,8 @@
+name: AdminHostJoin
+main: adminhostjoin.AdminHostJoin
+version: 1.0
+author: _Shevchik_
+load: STARTUP
+commands:
+  ahj:
+    usage: use ahj reload to reload config
