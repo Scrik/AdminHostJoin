@@ -21,7 +21,7 @@ public class LoginListener implements Listener {
 			if (host.contains(":")) {
 				host = host.substring(0, host.indexOf(":"));
 			}
-			if (!host.equals(config.getPlayerHost(player.getName()))) {
+			if (!host.equals(config.getPlayerHost(player.getName().toLowerCase()))) {
 				event.disallow(PlayerLoginEvent.Result.KICK_OTHER, "Join using appropriative host");
 			}
 		}

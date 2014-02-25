@@ -28,7 +28,7 @@ public class Config {
 		FileConfiguration config = YamlConfiguration.loadConfiguration(configfile);
 		for (String player : config.getKeys(false)) {
 			String host = config.getString(player);
-			playerHosts.put(player, host);
+			playerHosts.put(player.toLowerCase(), host);
 		}
 		config = new YamlConfiguration();
 		for (String player : playerHosts.keySet()) {
